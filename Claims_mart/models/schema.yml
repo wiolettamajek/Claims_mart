@@ -1,0 +1,106 @@
+version: 2
+
+sources:
+  - name: raw
+    database: postgres
+    schema: dbt_demo_raw_data
+    tables:
+      - name: exposure
+      - name: motor
+      - name: claim
+
+models:
+  - name: exposure_rename
+    tests:
+      - dbt_utils.equality:
+          compare_model: ref('exposure_rename_test_output')
+          compare_columns:
+            - exposure_id
+            - claim_id
+            - exposure_type
+            - total_payments
+            - ingestion_date
+          tags: [unit_testing]
+  - name: exposure_not_null
+    tests:
+      - dbt_utils.equality:
+          compare_model: ref('exposure_null_output')
+          compare_columns:
+            - exposure_id
+            - claim_id
+            - exposure_type
+            - total_payments
+            - ingestion_date
+          tags: [unit_testing]
+  - name: exposure_values
+    tests:
+      - dbt_utils.equality:
+          compare_model: ref('exposure_values_output')
+          compare_columns:
+            - exposure_id
+            - claim_id
+            - exposure_type
+            - total_payments
+            - ingestion_date
+          tags: [unit_testing]
+  - name: exposure_deduplication
+    tests:
+      - dbt_utils.equality:
+          compare_model: ref('exposure_deduplication_output')
+          compare_columns:
+            - exposure_id
+            - claim_id
+            - exposure_type
+            - total_payments
+            - ingestion_date
+          tags: [unit_testing]
+  - name: motor_rename
+    tests:
+      - dbt_utils.equality:
+          compare_model: ref('motor_rename_output')
+          compare_columns:
+            - motor_id
+            - loss_date
+            - vehicle_registration_number
+            - year
+            - make
+            - model
+            - engine_capacity
+            - colour
+            - damage_description
+            - total_loss_decision
+            - pre_accident_value
+            - repair_cost
+            - average_mileage_for_valuation
+            - policy_number
+            - driver_date_of_birth
+            - fuel_type
+            - doors
+            - seats
+            - ingestion_date
+          tags: [unit_testing]
+  - name: motor_not_null
+    tests:
+      - dbt_utils.equality:
+          compare_model: ref('motor_null_output')
+          compare_columns:
+            - motor_id
+            - loss_date
+            - vehicle_registration_number
+            - year
+            - make
+            - model
+            - engine_capacity
+            - colour
+            - damage_description
+            - total_loss_decision
+            - pre_accident_value
+            - repair_cost
+            - average_mileage_for_valuation
+            - policy_number
+            - driver_date_of_birth
+            - fuel_type
+            - doors
+            - seats
+            - ingestion_date
+          tags: [unit_testing]

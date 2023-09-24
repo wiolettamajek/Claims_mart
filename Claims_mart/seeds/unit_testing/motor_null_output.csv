@@ -1,0 +1,3 @@
+motor_id,loss_date,vehicle_registration_number,year,make,model,engine_capacity,colour,damage_description,total_loss_decision,pre_accident_value,repair_cost,average_mileage_for_valuation,policy_number,driver_date_of_birth,fuel_type,doors,seats,ingestion_date
+aaa,null,null,bbb,ccc,ddd,eee,null,null,fff,null,null,null,ggg,null,null,null,null,hhh
+aaa,bbb,ccc,ddd,eee,fff,ggg,hhh,iii,jjj,kkk,lll,mmm,nnn,ooo,ppp,rrr,sss,ttt

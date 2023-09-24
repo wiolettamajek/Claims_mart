@@ -1,0 +1,8 @@
+exposure_id,claim_id,exposure_type,total_payments,ingestion_date
+null,null,null,null,null
+aaa,null,ccc,ddd,eee
+null,bbb,ccc,ddd,eee
+aaa,bbb,null,ddd,eee
+aaa,bbb,ccc,ddd,null
+aaa,bbb,ccc,null,eee
+aaa,bbb,ccc,ddd,eee

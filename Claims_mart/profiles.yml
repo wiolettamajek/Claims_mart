@@ -1,0 +1,12 @@
+claims_mart:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: postgres
+      port: 5431
+      dbname: postgres
+      schema: staging
+      threads: 1

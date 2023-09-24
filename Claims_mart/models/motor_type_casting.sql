@@ -1,0 +1,21 @@
+SELECT
+    motor_id::BIGINT AS motor_id,
+    loss_date::TIMESTAMP AS loss_date,
+    vehicle_registration_number,
+    year::DATE AS year,
+    make,
+    model,
+    engine_capacity::INT AS engine_capacity,
+    colour,
+    damage_description,
+    total_loss_decision,
+    pre_accident_value::MONEY AS pre_accident_value,
+    repair_cost::MONEY AS repair_cost,
+    average_mileage_for_valuation::INT AS average_mileage_for_valuation,
+    policy_number,
+    driver_date_of_birth::DATE AS driver_date_of_birth,
+    fuel_type,
+    doors::INT AS doors,
+    seats::INT AS seats,
+    ingestion_date::DATE AS ingestion_date
+FROM {{ ref('motor_not_null') }}

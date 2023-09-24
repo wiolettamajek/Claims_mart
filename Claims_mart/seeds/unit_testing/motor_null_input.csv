@@ -1,0 +1,12 @@
+motor_id,loss_date,vehicle_registration_number,year,make,model,engine_capacity,colour,damage_description,total_loss_decision,pre_accident_value,repair_cost,average_mileage_for_valuation,policy_number,driver_date_of_birth,fuel_type,doors,seats,ingestion_date
+null,aaa,bbb,null,null,null,null,ccc,ddd,null,eee,fff,null,ggg,hhh,iii,jjj,kkk,null
+null,aaa,bbb,ccc,ddd,eee,fff,ggg,hhh,iii,jjj,kkk,lll,mmm,nnn,ooo,ppp,rrr,sss
+aaa,bbb,ccc,null,ddd,eee,fff,ggg,hhh,iii,jjj,kkk,lll,mmm,nnn,ooo,ppp,rrr,sss
+aaa,bbb,ccc,ddd,null,eee,fff,ggg,hhh,iii,jjj,kkk,lll,mmm,nnn,ooo,ppp,rrr,sss
+aaa,bbb,ccc,ddd,eee,null,fff,ggg,hhh,iii,jjj,kkk,lll,mmm,nnn,ooo,ppp,rrr,sss
+aaa,bbb,ccc,ddd,eee,fff,null,ggg,hhh,iii,jjj,kkk,lll,mmm,nnn,ooo,ppp,rrr,sss
+aaa,bbb,ccc,ddd,eee,fff,ggg,hhh,iii,null,jjj,kkk,lll,mmm,nnn,ooo,ppp,rrr,sss
+aaa,bbb,ccc,ddd,eee,fff,ggg,hhh,iii,jjj,kkk,lll,mmm,null,nnn,ooo,ppp,rrr,sss
+aaa,bbb,ccc,ddd,eee,fff,ggg,hhh,iii,jjj,kkk,lll,mmm,nnn,ooo,ppp,rrr,sss,null
+aaa,null,null,bbb,ccc,ddd,eee,null,null,fff,null,null,null,ggg,null,null,null,null,hhh
+aaa,bbb,ccc,ddd,eee,fff,ggg,hhh,iii,jjj,kkk,lll,mmm,nnn,ooo,ppp,rrr,sss,ttt

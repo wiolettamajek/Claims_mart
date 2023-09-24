@@ -1,0 +1,5 @@
+exposure_id,claim_id,exposure_type,total_payments,ingestion_date
+aaa,bbb,Vehicle,ccc,ddd
+eee,fff,Property,ggg,hhh 
+iiii,jjj,Bodily Injury,kkk,ooo
+rrr,sss,ttt,uuu,www
